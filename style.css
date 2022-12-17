@@ -30,87 +30,238 @@ button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
 a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
-ul li{list-style: none;}
+ul li{list-style: none;} 
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 body{
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	margin: 0px 0px 0px 52px;;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #d2d2d2;
 }
+
+p,a,h2,ul{
+   color: white;
+}
+
+header{
+	color: white;
+	font-weight: 300;
+	font-size: 10px;
+}
+
+.container{
+	max-width: 1200px;
+	min-width: 100px;
+	margin: 0 auto;
+}
+
+.navigation{
+	background-color:#606062;
+	padding: 15px 0px;
+	margin: 0 auto;
+}
+
+.navigation ul{
+	display: flex;
+	justify-content: space-evenly;
+	color: white;
+}
+
+main{
+	display: flex;
+}
+
+.left_side{
+	width: 30%;
+	background-color: #404042;
+}
+
+.photo{
+	width: 360px;
+	height: 360px;
+}
+
+.main-photo{
+	text-align: center;
+}
+
 
 h1{
-	color: #445161;
-	font-size: 30px;
-}
-
-h2{
-	color: #445161;
-	line-height: 1.2;
-	font-size: 25px;
-}
-
-.text{
-	line-height: 1.79
-}
-
-.bld{
-	color: #333;
+	font-size: 23px;
 	font-weight: bold;
-}
-
-.red{
-	color: #f00;
-}
-
-h3{
-	font-size: 20px;
-	line-height: 1.5;
-	color: #445161;
-}
-
-.align{
-	color: #333;
-	text-align: right;
-}
-
-.highletters{
-	color: #333;
+	color: #ed1b34;
 	text-transform: uppercase;
-}
-
-.kursive{
-	font-style: italic;
-	color: #333;
-}
-
-.crosline{
-	color: #333;
-	text-decoration: underline;
-}
-
-.aligncenter{
 	text-align: center;
-	color: #333;
+	padding: 0px 50px 0px 50px;
 }
 
-.fontheigh{
-	color: #333;
-	font-size: 24px;
+.job{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 15px;
+	margin-top: 10px;
 }
 
-.curvethough{
-	text-decoration: line-through;
+.about_me{
+	padding: 50px 50px 0px 50px;
+	line-height: 20px;
 }
 
-.smalfont{
-	font-family: 'Times New Roman', Times, serif;
-	color: #333;
+h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	border-bottom: 3px solid rgb(189, 35, 59);
+	padding: 0px 0px 0px 0px;
+	/* line-height: 30px;  */
 }
 
-.shadow{
-	color: #333;
-	text-shadow: 0.5px 0.9px 1px #000;
+.white{
+	padding-bottom: 4px;
+}
+
+.main_text_white{
+	padding: 30px 0px 0px 0px;
+	text-align: justify;
+}
+
+.contacts{
+	padding: 30px 50px 0px 50px;
+	line-height: 30px; 
+}
+
+.main_text_white img{
+	width: 20px;
+	height: 20px;
+	margin: 5px 15px 0px 0px;
+}
+
+.main_text_white li{
+	display: flex;
+}
+
+.contacts_info{
+	font-size: 12px;
+}
+
+.skills{
+	padding: 30px 50px 30px 50px;
+	line-height: 30px;
+}
+
+.skills_text{
+	width: 80px;
+}
+
+.skills .percent{
+	width: 100%;
+	height: 6px;
+	background: #68686a;
+	display: block;
+	margin: 12px 0px 0px 20px;
+}
+
+.skills .percent div{
+	height: 100%;
+	background: #ed1b34;
+}
+
+.right_side{
+	width: 70%;
+	background-color: white;
+	padding: 0px 100px 0px 100px;
+
+}
+
+.education{
+	margin: 80px 0px 0px 0px;
+}
+
+.title_gray{
+	border-bottom: 3px solid #939496;
+	color: black;
+	padding-bottom: 10px;
+}
+
+.gray{
+	color: black;
+	padding-top: 60px;
+	line-height: 20px;
+}
+
+.years{
+	color: black;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.education_block{
+	display: flex;
+}
+
+.about_university{
+	width: 430px;
+	padding-left: 50px;
+}
+
+.code_example{
+	margin: 80px 0px 0px 0px;
+}
+
+pre{
+	margin-top: 80px;
+	padding: 45px 0px 30px 0px;
+	background-color: #939496;
+}
+
+.interests{
+	margin: 80px 0px 0px 0px;
+}
+
+.photo_interests{
+	width: 50px;
+	height: 50px;
+}
+
+.gray_interests{
+	color: black;
+	padding: 60px 0px 100px 0px ;
+	line-height: 20px;
+}
+
+.photo_interests_center{
+	display: flex;
+	justify-content: space-around
+}
+
+.gray_for_images{
+	color: black;
+	display: flex;
+	padding-top: 10px;
+	padding-left: 10px;
+	justify-content: space-around
+}
+
+.footer{
+	background: #606062;
+	padding: 10px 0px 10px 20px;
+	display: flex;
+}
+
+.logo{
+	width: 100px;
+}
+
+.text_for_footer{
+	display: flex;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+.logo_git_hub{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
 }
